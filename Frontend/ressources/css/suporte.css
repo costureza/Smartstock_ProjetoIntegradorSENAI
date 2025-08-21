@@ -1,0 +1,192 @@
+.suporte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suporte-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--azul-bg);
+    border-radius: 1.25rem;
+    width: 90%;
+    max-width: 800px;
+    flex-grow: 1;
+}
+
+.heading {
+    border-radius: 1.25rem 1.25rem 0 0;
+    background: var(--azul);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    width: 100%;
+}
+
+.heading h1 {
+    font-size: var(--font-size-title);
+    color: var(--branco);
+    padding: 2rem;
+    text-shadow: var(--text-shadow);
+}
+
+
+.suporte .container {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    background: var(--azul-bg);
+    border-radius: 1.25rem;
+    gap: 1rem;
+}
+
+.container form {
+    width: 100%;
+}
+
+.container .input-group {
+    display: flex;
+    gap: var(--spacing-md);
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.container .input-group input {
+    flex: 1 1 45%;
+    min-width: 200px;
+}
+
+
+.container input[type="text"],
+.container input[type="email"] {
+    font-size: var(--font-size-md);
+    border-radius: 1.25rem;
+    padding: var(--spacing-lg);
+    flex: 1;
+    min-width: 0;
+}
+
+.container textarea {
+    width: 100%;
+    height: 20rem;
+    border-radius: 1.25rem;
+    font-size: var(--font-size-md);
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-md);
+}
+
+
+.container .btn {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    margin: 2rem auto 0 auto;
+    padding: 1.5rem 2rem;
+}
+
+/* Estilos para as melhorias da página de suporte */
+
+.campo-problema {
+    position: relative;
+    margin-bottom: var(--spacing-xl);
+}
+
+.contador-chars {
+    display: block;
+    margin-top: var(--spacing-xs);
+    font-size: var( --font-size-sm);
+    color: var(--branco-light);
+    transition: color 0.3s;
+}
+
+.dicas-laterais {
+    background: var(--branco-light);
+    padding: var(--spacing-md);
+    border-left: 4px solid var(--azul-bg);
+    margin-top: var(--spacing-sm);
+    font-size: var(--font-size-s);
+    border-radius: 0 8px 8px 0;
+}
+
+.dicas-laterais ul {
+    margin: 10px 0 0 20px;
+    padding: 0;
+}
+
+.dicas-laterais li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.upload-area {
+    margin-top: var(--spacing-xl);
+}
+
+.upload-label {
+    display: block;
+    padding: 20px;
+    border: 2px dashed var(--branco-light);
+    text-align: center;
+    cursor: pointer;
+    border-radius: var(--border-radius-md);
+    transition: all 0.3s;
+    background: var(--branco-light);
+}
+
+.upload-label:hover {
+    border-color: var(--azul-bg);
+    background: var(--branco-light);
+}
+
+.upload-label small {
+    display: block;
+    margin-top: var(--spacing-xs);
+    color: var(--cinza);
+}
+
+#preview-arquivo {
+    margin-top: var( --spacing-sm);
+}
+
+#preview-arquivo img {
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.categoria-select,
+.urgencia-select {
+    font-size: var(--font-size-md);
+    border-radius: 1.25rem;
+    padding:var(--spacing-lg);
+    width: 100%;
+    margin-bottom: 2rem;
+    border: 1px solid var(--branco-light);
+    background: var(--branco);
+}
+
+.info-adicional {
+    margin-bottom: var(--spacing-xl);
+}
+
+.alert {
+    padding: var(--spacing-md);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+.alert-success {
+    color: var(--verde-escuro);
+    background-color: var(--verde-claro);
+    border-color: var( --verde-claro);
+}
+
+.alert-danger {
+    color: var(--vermelho-escuro);
+    background-color: var(--rosa-claro);
+    border-color: var(--rosa_medio);
+}

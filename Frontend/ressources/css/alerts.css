@@ -1,0 +1,111 @@
+/**
+ * Estilos para Sistema de Alertas SmartStock
+/* Estilos para SweetAlert2 personalizados */
+.swal2-popup {    
+    border-radius: var(--border-radius-md);
+    font-size: var(--font-size-md);
+}
+
+.swal2-title {
+    color: var(--cinza-medio);
+    font-weight: 600;
+}
+
+.swal2-content {
+    color: var(--cinza_azulado);
+    font-size: var(--font-size-xs);
+}
+
+.swal2-confirm {
+    border-radius: var( --border-radius-md) !important;
+    font-weight: 500 !important;
+    padding: 12px 24px !important;
+}
+
+.swal2-cancel {
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+    padding: 12px 24px !important;
+}
+
+/* Estilos para diferentes tipos de alerta */
+.swal2-icon.swal2-error {
+    border-color: var(--vermelho-escuro);
+}
+
+.swal2-icon.swal2-error [class^='swal2-x-mark-line'] {
+    background-color: var(--vermelho-escuro);
+}
+
+.swal2-icon.swal2-success {
+    border-color: var(--verde-medio);
+}
+
+.swal2-icon.swal2-success [class^='swal2-success-line'] {
+    background-color: var(--verde-medio);
+}
+
+.swal2-icon.swal2-warning {
+    border-color: var(--dourado);
+}
+
+.swal2-icon.swal2-warning [class^='swal2-warning-line'] {
+    background-color: var(--dourado);
+}
+
+.swal2-icon.swal2-info {
+    border-color: var(--azul);
+}
+
+.swal2-icon.swal2-info [class^='swal2-info-line'] {
+    background-color: var(--azul);
+}
+
+/* Estilos para validação em tempo real */
+.form-group input:valid:not(:placeholder-shown) {
+    border-color: var(--verde-medio);
+}
+
+.form-group input:invalid:not(:placeholder-shown) {
+    border-color: var(--vermelho-escuro);
+}
+
+/* Estilos para tooltip de força da senha */
+.password-strength {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.password-strength.weak {
+    color: var(--vermelho-escuro);
+}
+
+.password-strength.medium {
+    color: var(--dourado);
+}
+
+.password-strength.strong {
+    color: var(--verde-medio);
+}
+
+/* Estilos para ícones de validação */
+.form-group {
+    position: relative;
+}
+
+.form-group .validation-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+.form-group .validation-icon.valid {
+    color: var(--verde-medio);
+}
+
+.form-group .validation-icon.invalid {
+    color: var(--vermelho-escuro);
+} 

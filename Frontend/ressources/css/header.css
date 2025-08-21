@@ -1,0 +1,205 @@
+/* ===== HEADER MODERNO E RESPONSIVO ===== */
+
+.header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 4rem;
+}
+
+#menu-btn{
+    font-size: var(--font-size-title);
+    color: var(--quase-preto);
+    margin-right:1rem;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.header .flex .smartstock{
+    display: flex;
+    
+}
+.header .flex .smartstock a{
+    font-size: var(--font-size-title);
+    color: var(--quase-preto); 
+}
+.header .flex .smart-logo{
+    display: flex;
+    align-items: center;    
+    gap: 1rem;
+}
+.header .flex .smart-logo img{
+    height: 8rem;
+    transition: all 0.3s ease;
+}
+
+.header .flex .smart-logo img:hover {
+    transform: scale(1.05);
+}
+
+
+.home {
+    color: var(--quase-preto);
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    transition: all 0.3s ease;
+}
+
+.home:hover {
+    color: var(--laranja);
+    transform: translateY(-1px);
+}
+
+.header.active{
+    background: var(--black);
+    backdrop-filter: blur(4px);
+}
+
+.side-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1100;
+
+    backdrop-filter:blur(10px);
+    display: none;
+}
+.side-bar.active{
+    display: block;
+}
+.side-bar .navbar{
+    height: 100%;
+    width: 35rem;
+    background-color: var(--white);
+    padding: 2rem;
+    overflow-y: scroll;
+    animation: slide-in .2s cubic-bezier(.32,.85,.21,1.26);
+    box-shadow: var(--box-shadow);
+    gap: var(--spacing-lg);
+    transition: all 0.3s ease;
+
+}
+
+@keyframes slide-in{
+    from{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.side-bar .navbar #close-btn{
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    border: .1rem solid var(--cinza-medio);
+    border-radius: 5rem;
+    display: inline-block;
+    color: var(--quase-preto);
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+.side-bar .navbar #close-btn:hover{
+    background-color: var(--quase-preto);
+    color: var(--branco-light);
+
+}
+.side-bar .navbar #close-btn i {
+    margin-right: .5rem;
+}
+.side-bar .navbar #close-btn:hover i{
+    margin-right: 1rem;
+}
+
+.header .flex a{
+    font-size: var(--font-size-md);
+    color: var(--quase-preto);
+    text-decoration: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    transition: all 0.3s ease;
+    position: relative;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.side-bar .navbar a{
+    display: block;
+    font-size: var(--font-size-md);
+    color: var(--quase-preto);
+    text-decoration: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    transition: all 0.3s ease;
+    position: relative;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+
+}
+.header .flex a::before,
+.side-bar .navbar a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, var(--laranja) 0%, var(--laranja-saturado) 100%);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+.header .flex a:hover,
+.side-bar .navbar a:hover{
+    color: var(--main-color);
+    color: var(--laranja);
+    background: var(--branco-light);
+    transform: translateY(-1px);
+
+}
+.header .flex a:hover::before,
+.side-bar .navbar a:hover::before {
+    width: 80%;
+}
+
+/* Contador de notificações */
+.contador-notificacoes {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--vermelho-escuro);
+    color: var(--branco);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+

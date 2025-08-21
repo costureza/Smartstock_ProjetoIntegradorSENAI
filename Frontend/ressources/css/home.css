@@ -1,0 +1,319 @@
+/* ===== PÁGINA HOME - LAYOUT CENTRALIZADO E HIERÁRQUICO ===== */
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: var(--spacing-xl);
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 100%;
+    gap: var(--spacing-xxl);
+    position: relative;
+}
+
+/* ===== SEÇÃO DO PERFIL - CENTRALIZADA ===== */
+.usuario .logo_foto {
+    background: var(--branco);
+    border-radius: var(--border-radius-xl);
+    padding: var(--spacing-xxl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xl);
+    width: 100%;    
+    box-shadow: var(--box-shadow-card);
+    border: 1px solid var(--branco-light);
+    animation: fadeIn 0.8s ease-out;
+    margin-top: calc(10vh + var(--spacing-xxl));
+    margin-bottom: var(--spacing-xxl);
+    position: relative;
+    z-index: 2;
+}
+
+.usuario .logo_foto img {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.usuario .logo_foto:hover img {
+    transform: scale(1.05);
+}
+
+/* ===== PERFIL DO USUÁRIO ===== */
+.usuario .logo_foto .perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xl);
+    width: 100%;
+    text-align: center;
+}
+
+.usuario .logo_foto .perfil .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--laranja);
+    box-shadow: var(--box-shadow-hover);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.usuario .logo_foto .perfil .image::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(135deg, var(--laranja) 0%, #FF6B00 100%);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.usuario .logo_foto .perfil .image:hover::before {
+    opacity: 1;
+}
+
+.usuario .logo_foto .perfil .image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 1rem 2rem rgba(255, 140, 0, 0.3);
+}
+
+.usuario .logo_foto .perfil .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.usuario .logo_foto .perfil .welcome {
+    font-size: var(--font-size-xl);
+    color: var(--quase-preto);
+    font-weight: 600;
+    margin: var(--spacing-lg) 0;
+    line-height: 1.4;
+}
+
+.usuario .logo_foto .perfil .welcome strong {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.usuario .logo_foto .perfil div {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-lg);
+    width: 100%;
+    max-width: 30rem;
+    justify-content: center;
+}
+
+/* ===== CONTAINER DE CARDS - SEÇÃO SECUNDÁRIA ===== */
+.usuario .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    width: 100%;
+    max-width: 120rem;
+    padding: var(--spacing-lg);
+    margin-top: var(--spacing-xxl);
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== CARDS INDIVIDUAIS ===== */
+.usuario .box-container .box {
+    background: var(--branco);
+    border-radius: var(--border-radius-xl);
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: var(--spacing-lg);
+    box-shadow: var(--box-shadow-card);
+    border: 1px solid var(--branco-light);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    max-width: 100%;
+    min-height: 25rem;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.usuario .box-container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, var(--laranja) 0%, var(--laranja-saturado) 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.usuario .box-container .box:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--box-shadow-hover);
+    border-color: var(--laranja);
+}
+
+.usuario .box-container .box:hover::before {
+    transform: scaleX(1);
+}
+
+/* ===== ÍCONES DOS CARDS ===== */
+.usuario .box-container .box i {
+    font-size: 4rem;
+    color: var(--laranja);
+    margin-bottom: var(--spacing-md);
+    transition: all 0.3s ease;
+}
+
+.usuario .box-container .box:hover i {
+    transform: scale(1.1);
+    color: var(--laranja-saturado);
+}
+
+/* ===== TÍTULOS DOS CARDS ===== */
+.usuario .box-container .box h3 {
+    font-size: var(--font-size-xl);
+    color: var(--quase-preto);
+    font-weight: 600;
+    margin: var(--spacing-md) 0;
+    line-height: 1.3;
+}
+
+/* ===== DESCRIÇÕES DOS CARDS ===== */
+.usuario .box-container .box p {
+    font-size: var(--font-size-md);
+    color: var(--cinza_azulado);
+    line-height: 1.6;
+    margin: var(--spacing-md) 0;
+    flex-grow: 1;
+}
+
+/* ===== BOTÕES DOS CARDS ===== */
+.usuario .box-container .box .btn {
+    width: 100%;
+    max-width: 20rem;
+    margin-top: var(--spacing-lg);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ===== ANIMAÇÕES ESPECÍFICAS ===== */
+.usuario .box-container .box:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.usuario .box-container .box:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.usuario .box-container .box:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* ===== ESTADOS DE FOCUS PARA ACESSIBILIDADE ===== */
+.usuario .box-container .box:focus-within {
+    outline: 2px solid var(--azul);
+    outline-offset: 4px;
+}
+
+.usuario .box-container .box .btn:focus {
+    outline: 2px solid var(--branco);
+    outline-offset: 2px;
+}
+
+.usuario .logo_foto:focus-within {
+    outline: 2px solid var(--laranja);
+    outline-offset: 4px;
+}
+
+/* ===== LOADING STATE ===== */
+.usuario .box-container .box.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.usuario .box-container .box.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid var(--branco-light);
+    border-top: 2px solid var(--laranja);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* ===== ESTADOS DE ERRO ===== */
+.usuario .box-container .box.error {
+    border-color: var(--vermelho-escuro);
+    background: linear-gradient(135deg, #FFF5F5 0%, #FED7D7 100%);
+}
+
+.usuario .box-container .box.error i {
+    color: var(--vermelho-escuro);
+}
+
+/* ===== ESTADOS DE SUCESSO ===== */
+.usuario .box-container .box.success {
+    border-color: #28A745;
+    background: linear-gradient(135deg, #F0FFF4 0%, #C6F6D5 100%);
+}
+
+.usuario .box-container .box.success i {
+    color: #28A745;
+}
+
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .usuario {
+        min-height: auto;
+        gap: var(--spacing-lg);
+    }
+
+    .usuario .logo_foto {
+        margin-top: var(--spacing-lg);
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+
+    .usuario .box-container {
+        margin-top: var(--spacing-lg);
+    }
+}

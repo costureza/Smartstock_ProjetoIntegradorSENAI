@@ -1,0 +1,43 @@
+/* Estilos para página de alterar senha */
+
+.password-strength {
+    font-size: var(--font-size-xs);
+    margin-top: 5px;
+}
+
+.strength-weak { 
+    color: var(--vermelho-escuro); 
+}
+
+.strength-medium { 
+    color: var(--laranja-saturado); 
+}
+
+.strength-strong { 
+    color: var(--verde-medio); 
+}
+
+.password-requirements {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.requirement {
+    margin: 2px 0;
+    color: var(--cinza);
+}
+
+.requirement-met {
+    color: var(--verde-medio);
+}
+
+.requirement-not-met {
+    color: var(--vermelho-escuro);
+}
+
+.form-info {
+    text-align: center;
+    color:var(--cinza);
+    margin-bottom: 20px;
+    font-size: var(--font-size-s);
+}

@@ -1,0 +1,431 @@
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .sobre_nos .membros .box {
+        flex: 1 1 calc(50% - 2rem);
+        max-width: calc(50% - 2rem);
+    }
+    section{
+        padding: 2rem;
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+
+    .cadastro.container,
+    .login.container {
+        flex-direction: column;
+        align-items: center;
+        padding: var(--spacing-lg) 5%;
+        margin: var(--spacing-md) 0;
+        gap: var(--spacing-lg);
+    }
+
+    .logo {
+        max-width: 100%;
+        min-height: auto;
+        padding: 0;
+        animation: none;
+    }
+
+    .logo img {
+        max-height: 25rem;
+    }
+
+    .form {
+        max-width: 100%;
+        padding: var(--spacing-md);
+        animation: none;
+    }
+
+
+    .form-container {
+        max-width: 100%;
+        padding: var(--spacing-md);
+    }
+
+
+    :root {
+        --font-size-md: 1.4rem;
+        --font-size-lg: 1.6rem;
+        --font-size-title: 2.8rem;
+    }
+
+
+    .welcome {
+        font-size: var(--font-size-md);
+    }
+
+    .usuario .box-container {
+        grid-template-columns: 1fr;
+    }
+
+    .container input[type="text"],
+    .container input[type="email"],
+    .container textarea {
+        font-size: 1.4rem;
+    }
+
+    .container textarea {
+        height: 20rem;
+    }
+
+    .checklist-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card {
+        max-height: none;
+    }
+
+    .sobre_nos .membros .box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .sobre_nos .membros .box .photo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .sobre_nos h1 {
+        font-size: 3rem;
+    }
+
+    .checklist-wrapper {
+        padding: var(--spacing-md);
+        gap: var(---spacing-lg);
+    }
+
+    .checklist-header {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .checklist-section-header {
+        padding: var(--spacing-md) var(--spacing-lg);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+
+    .checklist-section-status {
+        align-self: flex-end;
+    }
+
+    .checklist-items {
+        padding: var(--spacing-md);
+    }
+
+    .checklist-item {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .checklist-item-checkbox {
+        align-self: flex-start;
+    }
+
+    .checklist-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .checklist-btn {
+        justify-content: center;
+    }
+
+    .gerenciarprodutos {
+        flex-direction: column;
+        padding: var(--spacing-md);
+        gap: var(--spacing-lg);
+    }
+
+    .form-produto,
+    .table-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-container-produto h3,
+    .table-container h3 {
+        font-size: var(--font-size-xl);
+    }
+
+    .form-container-produto .btn {
+        max-width: 100%;
+    }
+
+    .tab-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tab-button {
+        width: 100%;
+    }
+
+    .categoria-select,
+    .urgencia-select {
+        font-size: var(--font-size-s);
+        padding: 1.2rem;
+    }
+
+    .dicas-laterais {
+        font-size: var(--font-size-s);
+        padding: 12px;
+    }
+
+    .upload-label {
+        padding: 15px;
+    }
+
+    #preview-arquivo img {
+        max-width: 150px;
+    }
+
+    .ordens-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .ordem-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .ordem-status {
+        align-self: flex-start;
+    }
+
+    .ordem-actions {
+        flex-direction: column;
+    }
+
+    .btn-checklist,
+    .btn-finalizar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .modal-content {
+        margin: 5% auto;
+        padding: 20px;
+        width: 95%;
+    }
+
+    .checklist-categories {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+    }
+
+    .modal-actions button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ordens-container .heading h1 {
+        font-size: 2rem;
+    }
+
+    .ordem-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .modal-header h2 {
+        font-size: 1.5rem;
+    }
+    .card-grid-2,
+    .card-grid-3,
+    .card-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .card-header,
+    .card-content,
+    .card-footer {
+        padding: var(--spacing-md);
+    }
+    
+    .tooltip .tooltiptext {
+        width: 15rem;
+        margin-left: -7.5rem;
+        font-size: var(--font-size-xs);
+    }
+
+    .forgot-password-card {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+        border-radius: var(--border-radius);
+    }
+    
+    .forgot-password-title {
+        font-size: 1.5rem;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .action-button {
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .navigation-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .navigation-links a {
+        margin: 0;
+    }
+
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    body {
+        padding-top: 6rem;
+    }
+
+    .container {
+        padding: var(--spacing-md);
+        margin: var(--spacing-sm);
+    }
+
+    .welcome {
+        font-size: var(--font-size-md);
+    }
+
+    .updateperfil .logo,
+    .cadastro .logo,
+    .login .logo {
+        display: none;
+    }
+
+    .cadastro p,
+    .login p {
+        font-size: var(--font-size-xs);
+    }
+
+    .logo_foto .logo {
+        display: none;
+    }
+
+    .container .input-group input {
+        flex: 1 1 45%;
+    }
+
+    .container input[type="text"],
+    .container input[type="email"],
+    .container textarea {
+        font-size: 1.2rem;
+    }
+
+    .heading h1 {
+        padding: 2rem;
+    }
+
+    .suporte .container {
+        padding: 2rem;
+    }
+
+    .sobre_nos {
+        padding: 1rem;
+    }
+
+    .sobre_nos .membros .box {
+        margin: 1rem 0;
+        padding: 1.5rem;
+    }
+
+    .sobre_nos .membros .box .photo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .sobre_nos .membros .box .txt h2 {
+        font-size: 1.8rem;
+    }
+
+    .sobre_nos .membros .box .txt p {
+        font-size: 1.4rem;
+    }
+
+    .sobre_nos .membros .box .git a,
+    .sobre_nos .membros .box .git i {
+        height: 3.5rem;
+        width: 3.5rem;
+        font-size: 1.6rem;
+    }
+
+    .checklist-header-text h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .checklist-section-title {
+        font-size: var(--font-size-lg);
+    }
+
+    .checklist-item-title {
+        font-size: var(--font-size-sm);
+    }
+
+    .modal-imagem-content {
+        margin: 10% auto;
+        width: 95%;
+        padding: 15px;
+    }
+
+    .forgot-password-container {
+        padding: 0.5rem;
+    }
+    
+    .forgot-password-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .form-input {
+        padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .input-icon {
+        left: 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    .submit-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

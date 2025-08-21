@@ -1,0 +1,73 @@
+/* ===== PÁGINA GERENCIAR PRODUTOS - LAYOUT RESPONSIVO ===== */
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.gerenciarprodutos {
+    display: flex;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-xl);
+    margin: var(--spacing-xl) auto;
+    max-width: 140rem;
+    width: 100%;
+    min-height: calc(100vh - 20rem);
+}
+
+/* ===== FORMULÁRIO DE CADASTRO ===== */
+.form-produto {
+    background: var(--branco);
+    border-radius: var(--border-radius-xl);
+    padding: var(--spacing-xl);
+    box-shadow: var(--box-shadow-card);
+    border: 1px solid var(--branco-light);
+    flex: 1;
+    min-width: 0;
+}
+
+.form-container-produto {
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.form-container-produto h3 {
+    font-size: var(--font-size-xxl);
+    color: var(--quase-preto);
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    font-weight: 600;
+}
+
+.form-container-produto .btn {
+    width: 100%;
+    max-width: 30rem;
+    margin: var(--spacing-lg) auto 0;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* ===== STATUS BADGES ===== */
+.status-badge {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-estoque {
+    background: linear-gradient(135deg, var(--verde-medio) 0%, #1E7E34 100%);
+    color: var(--branco);
+}
+
+.status-manutencao {
+    background: linear-gradient(135deg, var(--dourado) 0%, #E0A800 100%);
+    color: #212529;
+}
+
+.status-em-uso {
+    background: linear-gradient(135deg, var(--azul-bg) 0%, #138496 100%);
+    color: var(--branco);
+}
