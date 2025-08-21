@@ -1,0 +1,2 @@
+# Smartstock_ProjetoIntegradorSENAI
+
