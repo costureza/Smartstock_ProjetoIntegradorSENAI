@@ -1,5 +1,10 @@
 # SMARTSTOCK - Controle de Estoque Inteligente
 
+
+https://github.com/user-attachments/assets/9c2d818b-46f6-4508-bc36-206e0139e600
+
+
+
 ## 📋 Índice
 - [Sobre o Projeto](#sobre-o-projeto)
 - [Funcionalidades](#funcionalidades)
@@ -98,7 +103,7 @@ O **SMARTSTOCK** é um sistema completo de controle de estoque inteligente desen
 
 ### 1. Clone o Repositório
 ```bash
-git clone https://github.com/rosamrcl/smartstock
+git clone https://github.com/costureza/smartstock
 cd smartstock
 ```
 
